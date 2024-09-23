@@ -6,7 +6,7 @@ const options = {
     method: 'GET',
     headers: {
         accept: 'application/json',
-        Authorization: api_token_authentication_key
+        Authorization: api_token_authentication_key //using my api key here
     }
 };
 
