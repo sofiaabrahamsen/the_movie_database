@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**************************
+*
+*
+* Styling for body, nav and footer elements
+*
+*
+***************************/
+body {
+    header{
+        background-color: #4c0c1b;
+        color: white;
+    }
+    h1{
+        margin: 0 15px;
+    }
+}
+
+nav.nav-links{
+    display: flex;
+    list-style: none;
+    background-color: #b8001f;
+    color: #ffffff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #4c0c1b;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/**************************
+*
+*
+* Media Queries for Responsive Design (Header and nav)
+* For devices with screen width 600px or less
+*
+*
+***************************/
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    nav ul li {
+        margin: 2px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+
+}
+
+
+/**************************
+*
+*
+* Styling for each movie card
+*
+*
+***************************/
+.movie-card {
+    background-color: #f8f1fa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #5d0d41;
+}
+
+.movie-title {
+    display: flex;
+    background-color: #7c2353;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.movie-content{
+    display: flex;
+    align-items: flex-start;
+}
+
+.movie-img img {
+    width: auto;
+    height: auto;
+}
+
+.movie-details {
+    margin-left: 10px;
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.movie-overview {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.movie-original-title{
+    font-size: 16px;
+    color: black;
+
+    .bold-text {
+        font-weight: bold;
+    }
+}
+
+.movie-release {
+    font-size: 16px;
+    color: black;
+
+    .bold-text{
+        font-weight: bold;
+    }
+}
+
+.movie-item {
+    padding: 10px;
+    max-width: 100%;
+}
+
+/**************************
+*
+*
+* Media Queries for Responsive Design (For Movie card)
+* For devices with screen width 600px or less
+*
+*
+***************************/
+@media (max-width: 600px) {
+    .movie-content {
+        flex-direction: column;
+    }
+
+    .movie-img {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .movie-details {
+        margin-left: 0;
+    }
+
+    .movie-title {
+        font-size: 20px;
+    }
+
+    .movie-overview {
+        font-size: 14px;
+    }
+}
+
+
+
+    
